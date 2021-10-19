@@ -12,6 +12,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/microservice/user/repository/UserRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/microservice/user/service/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
