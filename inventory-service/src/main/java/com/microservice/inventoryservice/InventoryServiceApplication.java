@@ -22,7 +22,7 @@ public class InventoryServiceApplication {
             inventoryRepository.saveAll(
                     List.of(
                             Inventory.builder().skuCode("iphone_14").quantity(10).build(),
-                            Inventory.builder().skuCode("iphone_14_pro").quantity(5).build()
+                            Inventory.builder().skuCode("iphone_14_pro").quantity(0).build()
                     )
             );
         };
