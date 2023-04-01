@@ -29,7 +29,7 @@ class MailService {
         };
         try {
             mailSender.send(messagePreparator);
-            log.info("Book issued email sent!!");
+            log.info("Order notification sent successfully");
         } catch (MailException e) {
             log.error("Exception occurred when sending mail", e);
         }

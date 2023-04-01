@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.microservice</groupId>
 	<artifactId>discovery-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>discovery-server</name>
 	<description>discovery-server</description>
 	<properties>
@@ -21,10 +21,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -58,6 +54,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.2.1</version>
+				<configuration>
+					<to>
+						<image>registry.hub.docker.com/helalkhan/${project.artifactId}:${project.version}</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
