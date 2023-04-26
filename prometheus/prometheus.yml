@@ -27,3 +27,9 @@ scrape_configs:
       - targets: ['notification-service:8080']
         labels:
           application: 'Notification Service Application'
+  - job_name: 'auth_service'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['auth-service:8080']
+        labels:
+          application: 'Authentication Service Application'
